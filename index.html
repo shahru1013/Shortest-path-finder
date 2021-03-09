@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shortest Path Vizualizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main-body">
+        <div class="elements-sec">
+            <div class="top-sec">
+                 <select name="Algo" class="algo-item" id="option">
+                     <option value="BFS">BFS</option>
+                 </select>
+                 <button onclick="searchRoute()" style="color: #96EB82;" id="start-btn"><i class='fa fa-play'></i> Find Path</button>
+                 <button onclick="reset()" style=" width: 100px; color: #833b34;" >Clear</button>
+                 <span id="path-len">
+                </span>
+                 
+            </div>
+            <div class="mid-sec">
+               <div class="mid-grid" id="mid-grid-id">
+                    <div id="a" class="grid-box" onclick="gridCellClk(this.id)" onmouseover="gridMouseOver(this.id)"> </div>
+               </div>
+               <div class="mid-buttons">
+                  <button style="color: #A59EE8;" onclick="startPoint()" ><i class="fa fa-map-marker" aria-hidden="true"></i> Mark Start</button>
+                  <button style="color: #DC2E1D;" onclick="endPoint()"> <i class="fa fa-flag"></i> Mark Destination</button>
+               </div>
+            </div>
+            <div class="bottom-sec">
+                
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="script.js"></script>
+<script src="algorithm.js"></script>
+</html>
