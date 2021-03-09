@@ -241,6 +241,7 @@ let reset = () =>{
         if(cell.style.backgroundImage){
             cell.style.backgroundImage="none";
         }
+        cell.style.transform="scale(1) perspective(1px)";
      }
    }
 
