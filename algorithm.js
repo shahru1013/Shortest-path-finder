@@ -213,7 +213,9 @@ let drawPath = () =>{
 
 //path not found
 let pathNotFound = ()=>{
-   alert("Path Not Found");
+   let pathLenText = document.getElementById('path-len');
+    pathLenText.style.color="red";
+    pathLenText.innerText="Path Not Found!";
 }
 
 /*Reset All */
